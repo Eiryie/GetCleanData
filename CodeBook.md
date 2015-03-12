@@ -1,6 +1,6 @@
 # Run_analysis.R Codebook
 
-## Data
+## Source Data
 This project uses data collected from the accelerometers from the Samsung Galaxy S smartphone.  The following zip file must be downloaded and extracted into the user's working directory in order for the run_analysis.R script to work: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
@@ -18,11 +18,41 @@ The UCI HAR dataset includes the following text files:
   * y_train/y_test: activity codes for each observation.
   * subject_train/subject_test: subject identification (ID) codes for each observation. 
 
-## Variables
-* Subject:  Identification number of the test subject.  
-
-
-
+## Tidy Dataset Variables
+* Subject:  Identification number of the test subject.  [Values: 1:30]
+* Activity_type:  Text description of the activity for each observation.  [Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING]
+* Observation variables: Refer to the UCI HAR Dataset features_info.txt file for units and further descriptions of the following study variables.
+ * timeBodyAccelerometer: [mean, std for XYZ]
+ * timeGravityAccelerometer: [mean, std for XYZ]
+ * timeBodyAccelerometerJerk: [mean, std for XYZ]
+ * timeBodyGyroscope: [mean, std for XYZ]
+ * timeBodyGyroscopeJerk: [mean, std for XYZ]
+ * timeBodyAccelerometerMagnitude: [mean, std for XYZ]
+ * timeGravityAccelerometerMagnitude: [mean, std]
+ * timeBodyAccelerometerJerkMagnitude: [mean, std]
+ * timeBodyGyroscopeMagnitude: [mean, std]
+ * timeBodyGyroscopeJerkMagnitude: [mean, std]
+ * frequencyBodyAccelerometer: [mean, std for XYZ]
+ * frequencyBodyAccelerometer-meanFreq: [mean for XYZ]
+ *	frequencyBodyAccelerometerJerk: [mean, std for XYZ]
+ *	frequencyBodyAccelerometerJerk-meanFreq: [mean for XYZ]
+ *	frequencyBodyGyroscope: [mean, std for XYZ]
+ *	frequencyBodyGyroscope-meanFreq: [mean for XYZ]
+ *	frequencyBodyAccelerometerMagnitude: [mean, std]
+ *	frequencyBodyAccelerometerMagnitude-meanFreq()	
+ *	frequencyBodyAccelerometerJerkMagnitude: [mean, std]
+ *	frequencyBodyAccelerometerJerkMagnitude-meanFreq()	
+ *	frequencyBodyGyroscopeMagnitude: [mean, std]
+ *	frequencyBodyGyroscopeMagnitude-meanFreq()	
+ *	frequencyBodyGyroscopeJerkMagnitude: [mean, std]
+ *	frequencyBodyGyroscopeJerkMagnitude-meanFreq()	
+ *	angle(tBodyAccelerometerMean,gravity)	
+ *	angle(tBodyAccelerometerJerkMean,gravityMean)	
+ *	angle(tBodyGyroscopeMean,gravityMean)	
+ *	angle(tBodyGyroscopeJerkMean,gravityMean)	
+ *	angle(X,gravityMean)	
+ *	angle(Y,gravityMean)
+ *	angle(Z,gravityMean)
 
 ## Data Cleanup
 Run_analysis.R performs the following manipulations to the raw UCI HAR dataset.  Refer to the README.md file for a more thorough description of all activities performed within the script.
