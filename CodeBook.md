@@ -14,7 +14,9 @@ The UCI HAR dataset includes the following text files:
 * activity_labels:  Index of activity code recorded in each observation with the related activity type (e.g., standing).
 * Both the train and test datasets include the following files:
   * Inertial Signals folders:  original data records (not used in this analysis).
-  * 
+  * x_train/x_test: measurement variables for the subjects assigned to the training and test groups.
+  * y_train/y_test: activity codes for each observation.
+  * subject_train/subject_test: subject identification (ID) codes for each observation. 
 
 ## Variables
 * Subject:  Identification number of the test subject.  
