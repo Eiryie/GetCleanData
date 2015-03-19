@@ -62,4 +62,4 @@ Run_analysis.R performs the following manipulations to the raw UCI HAR dataset. 
 * 3. Applies the column headers found in the Features.txt file of the UCI HAR dataset to the correct columns in the merged dataset.
 * 4. Links the appropriate activity label to each observation (row) based on the indexed activity code found in the activity_labels.txt file of the UCI HAR dataset.
 * 5. Removes any measurement columns that do not include a mean or standard deviation (std) measurement from the merged dataset and updates remaining column names to be more readable.
-* 6. Calculates the average of each remaining mean or std variable for each activity and each subject.
+* 6. Calculates the average of each remaining mean or std variable for each activity by subject.
