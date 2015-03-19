@@ -21,7 +21,7 @@ The UCI HAR dataset includes the following text files:
 ## Tidy Dataset Variables
 * Subject:  Identification number of the test subject.  [Values: 1:30]
 * Activity_type:  Text description of the activity for each observation.  [Values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING]
-* Observation variables: The calculated mean for each observation variable that represented either a mean or standard deviation in the original dataset. [Values: Refer to the UCI HAR Dataset features_info.txt file for units and further descriptions of the original study variables.]
+* Observation variables: For each observation variable that represented either a mean or standard deviation in the original dataset, the tidy value represents the mean of each Subject/Activity_type pair. [Values: Refer to the UCI HAR Dataset features_info.txt file for units and further descriptions of the original study variables.]
  * timeBodyAccelerometer: [mean, std for XYZ]
  * timeGravityAccelerometer: [mean, std for XYZ]
  * timeBodyAccelerometerJerk: [mean, std for XYZ]
